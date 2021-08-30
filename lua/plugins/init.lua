@@ -355,7 +355,7 @@ return packer.startup(function()
      "hashivim/vim-terraform",
      disable = not plugin_status.vim_terraform,
      config = function()
-        requires "plugins.configs.vim_terraform"
+        require "plugins.configs.vim_terraform"
      end,
    }
 

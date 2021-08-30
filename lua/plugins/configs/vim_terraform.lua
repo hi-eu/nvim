@@ -5,3 +5,4 @@ vim.g.terraform_fold_sections = 1
 --HCL
 vim.g.hcl_align = 1
 vim.g.hcl_fold_sections = 1
+

@@ -90,8 +90,9 @@ M.plugin_status = {
    neoscroll = true, -- smooth scroll
    telescope_media = true, -- see media files in telescope picker
    truezen = false, -- no distraction mode for nvim
-   vim_fugitive = false, -- git in nvim
+   vim_fugitive = true, -- git in nvim
    vim_matchup = true, -- % magic, match it but improved
+   vim_terraform = true, -- enable vim_terraform 
 }
 
 -- mappings -- don't use a single keymap twice --
