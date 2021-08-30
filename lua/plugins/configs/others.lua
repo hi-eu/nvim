@@ -85,10 +85,24 @@ M.luasnip = function()
    if not present then
       return
    end
-
+   vim.api.nvim_set_keymap("i", "<C-E>", "<Plug>luasnip-next-choice", {})
+   vim.api.nvim_set_keymap("s", "<C-E>", "<Plug>luasnip-next-choice", {})
+   local types = require "luasnip.util.types"
    luasnip.config.set_config {
       history = true,
       updateevents = "TextChanged,TextChangedI",
+      ext_opts = {
+        [types.choiceNode] = {
+          active = {
+            virt_text = { { "Ctrl+E to chose your value", "Comment" } },
+          },
+        },
+        [types.insertNode] = {
+          active = {
+            virt_text = { { "Insert your value", "Comment" } },
+          },
+        },
+      },
    }
    require("luasnip/loaders/from_vscode").load()
 end

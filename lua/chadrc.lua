@@ -12,7 +12,7 @@ M.ui = {
 
    -- theme toggler, toggle between two themes, see theme_toggleer mappings
    theme_toggler = {
-      enabled = false,
+      enabled = true,
       fav_themes = {
          "everforest",
          "gruvchad",
@@ -118,7 +118,7 @@ M.mappings = {
    save_file = "<C-s>", -- save file using :w
    theme_toggler = "<leader>tt", -- for theme toggler, see in ui.theme_toggler
 
-   -- terminal related mappings
+  -- terminal related mappings
    terminal = {
       -- multiple mappings can be given for esc_termmode and esc_hide_termmode
       -- get out of terminal mode
