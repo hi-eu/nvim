@@ -8,13 +8,13 @@ M.ui = {
    italic_comments = false,
 
    -- theme to be used, to see all available themes, open the theme switcher by <leader> + th
-   theme = "onedark",
+   theme = "everforest",
 
    -- theme toggler, toggle between two themes, see theme_toggleer mappings
    theme_toggler = {
       enabled = false,
       fav_themes = {
-         "onedark",
+         "everforest",
          "gruvchad",
       },
    },
@@ -33,7 +33,7 @@ M.ui.plugin = {
       hidden = {},
       shown = {},
       -- default, round , slant , block , arrow
-      style = "default",
+      style = "arrow",
    },
 }
 
@@ -47,7 +47,7 @@ M.options = {
    hidden = true,
    ignorecase = true,
    insert_nav = true, -- navigation in insertmode
-   mapleader = " ",
+   mapleader = ",",
    mouse = "a",
    number = true,
    -- relative numbers in normal mode tool at the bottom of options.lua
@@ -55,13 +55,13 @@ M.options = {
    permanent_undo = true,
    shiftwidth = 2,
    smartindent = true,
-   tabstop = 8, -- Number of spaces that a <Tab> in the file counts for
+   tabstop = 4, -- Number of spaces that a <Tab> in the file counts for
    timeoutlen = 400,
-   relativenumber = false,
-   ruler = false,
+   relativenumber = true,
+   ruler = true,
    updatetime = 250,
    -- used for updater
-   update_url = "https://github.com/NvChad/NvChad",
+   update_url = "https://github.com/hieunc-edu/nvim",
    update_branch = "main",
 }
 
@@ -74,7 +74,7 @@ M.options.plugin = {
 
 -- enable and disable plugins (false for disable)
 M.plugin_status = {
-   autosave = false, -- to autosave files
+   autosave = true, -- to autosave files
    blankline = true, -- beautified blank lines
    bufferline = true, -- buffer shown as tabs
    cheatsheet = true, -- fuzzy search your commands/keymappings
@@ -88,7 +88,7 @@ M.plugin_status = {
    lspsignature = true, -- lsp enhancements
    neoformat = true, -- universal formatter
    neoscroll = true, -- smooth scroll
-   telescope_media = false, -- see media files in telescope picker
+   telescope_media = true, -- see media files in telescope picker
    truezen = false, -- no distraction mode for nvim
    vim_fugitive = false, -- git in nvim
    vim_matchup = true, -- % magic, match it but improved
