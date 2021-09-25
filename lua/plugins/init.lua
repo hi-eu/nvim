@@ -188,7 +188,7 @@ return packer.startup(function()
    }
 
    use {
-      "L3MON4D3/LuaSnip",
+      "hieunc-edu/LuaSnip",
       wants = "snippets",
       after = "nvim-cmp",
       config = function()
